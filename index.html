@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainBox">
+        <h1>Password Generator</h1>
+        <label for="Length">Length</label> <span id="showLen">8</span> <br>
+        <input type="range" name="range" id="len" min="8" max="50"/ value="8" onchange="changeRange(this.value)"><br>
+        <label for="upperCase">Uppercase</label> <input type="checkbox" id="uppercase">
+        <label for="numbers">Numbers</label> <input type="checkbox" id="numbers">
+        <label for="specialChar">Special Characters</label> <input type="checkbox" id="specialChar"><br>
+        <button class="btn" onclick="generatePassword()">Generate Password</button> <button class="btn" onclick="reset()">Reset</button>
+    </div>
+    <div id="fpassword">Generated Password</div>
+    <script src="index.js"></script>
+</body>
+<footer>
+  Made with <span class="heart">♥</span> by Abdul Rahman |
+  <a href="https://github.com/abdul-rahman18" target="_blank">GitHub</a> |
+  <a href="https://www.linkedin.com/in/abdul-rahman18/" target="_blank">LinkedIn</a>
+</footer>
+
+</html>
